@@ -16,7 +16,7 @@ RUN mvn package -DskipTests
 FROM adoptopenjdk/openjdk11:alpine-slim
 
 # 将 jar 放入容器内
-COPY --from=builder /app/target/maxims.jar /maxims.jar
+COPY --from=builder /app/target/maxims-*.jar /maxims.jar
 
 # 启动服务
 CMD ["java", "-Djava.security.egd=file:/dev/./urandom", "-jar", "/maxims.jar"]
