@@ -5,7 +5,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class RawDataDO {
+public class RawData {
 	private String nickName;
 	private String avatarUrl;
 	private Integer gender;
