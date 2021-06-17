@@ -1,8 +1,10 @@
 package cn.gotom.wechat;
 
+import io.swagger.annotations.ApiModel;
 import lombok.Getter;
 import lombok.Setter;
 
+@ApiModel("用户非敏感信息")
 @Getter
 @Setter
 public class RawData {

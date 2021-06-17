@@ -40,7 +40,7 @@ wx.login({
         }
       });
     }else{
- 
+		this.showInfo('登录失败');
     }
   }
 });
